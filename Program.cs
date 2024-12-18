@@ -68,4 +68,27 @@ namespace BibloLibrary
 
     }
 
+    public class LybraryBook
+    {
+
+        public static void Main(string[] args)
+        {
+            //creiamo il primo utente
+            Utente utente1 = new Utente("001", "Mario", "Mario", 2021);
+            Console.WriteLine(utente1.Denomination());
+            // creiamo il secondo Utente
+            Utente utente2 = new Utente("001", "Luigi", "Mario", 2020);
+            Console.WriteLine(utente2.Denomination());
+            // creiamo un Libro
+            Book book = new Book("B01", "Lo Hobbit", "J.R.R.Tolkien");
+            Console.WriteLine(book.Description());
+
+
+
+
+        }
+    }
+
+
+
 }
