@@ -79,12 +79,18 @@ namespace BibloLibrary
             // creiamo il secondo Utente
             Utente utente2 = new Utente("001", "Luigi", "Mario", 2020);
             Console.WriteLine(utente2.Denomination());
-            // creiamo un Libro
+            // creiamo un Libbro
             Book book = new Book("B01", "Lo Hobbit", "J.R.R.Tolkien");
             Console.WriteLine(book.Description());
 
-
-
+            //presto per la prima volta il libbro
+            book.Loan(utente1);
+            //testo se è possibile prestare il libbro se è già in prestito
+            book.Loan(utente2);
+            //restituisco il libbro
+            book.Refund();
+            //presto il libbro ad un nuovo utente
+            book.Loan(utente2);
 
         }
     }
