@@ -2,6 +2,7 @@ BibloLibrary è una applicazione da riga di comando scritta in C# per gestire gl
 La funzionalità principale include la registrazione degli utenti, il prestito dei libri e la restituzione, assicurando che i libri non possano essere prestati se già in uso.
 
 Funzionalità
+
 Gestione Utenti: Consente di creare e visualizzare utenti con un ID , nome, cognome e anno di registrazione.
 
 Gestione Libri: Consente di creare e visualizzare libri con ID , titoli e autori.
