@@ -1,0 +1,15 @@
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\bin\Debug\net8.0\Biblioteca.exe
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\bin\Debug\net8.0\Biblioteca.deps.json
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\bin\Debug\net8.0\Biblioteca.runtimeconfig.json
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\bin\Debug\net8.0\Biblioteca.dll
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\bin\Debug\net8.0\Biblioteca.pdb
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\obj\Debug\net8.0\Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\obj\Debug\net8.0\Biblioteca.AssemblyInfoInputs.cache
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\obj\Debug\net8.0\Biblioteca.AssemblyInfo.cs
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\obj\Debug\net8.0\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\obj\Debug\net8.0\Biblioteca.sourcelink.json
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\obj\Debug\net8.0\Biblioteca.dll
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\obj\Debug\net8.0\refint\Biblioteca.dll
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\obj\Debug\net8.0\Biblioteca.pdb
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\obj\Debug\net8.0\Biblioteca.genruntimeconfig.cache
+C:\Users\Marik.DESKTOP-RC2L6B1\Documents\csharp\Biblioteca\obj\Debug\net8.0\ref\Biblioteca.dll

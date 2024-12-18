@@ -28,8 +28,8 @@ namespace BibloLibrary
         private string id;
         private string title;
         private string author;
-        //oggetto della classe utente 
-        private Utente utente;
+        //oggetto della classe utente che può essere nullo 
+        private Utente? utente;
 
 
         public Book(string id, string title, string author)
@@ -60,8 +60,12 @@ namespace BibloLibrary
         }
         public void Refund()
         {
-            Console.WriteLine($"{this.title} è stato restituito da {this.utente.Denomination()}");
-            this.utente = null;
+            if (this.utente != null)
+            {
+                Console.WriteLine($"{this.title} è stato restituito da {this.utente.Denomination()}");
+                this.utente = null;
+            }
+
 
         }
 
