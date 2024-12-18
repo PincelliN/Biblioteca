@@ -1,12 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
-class User
+public class Utente
 {
     private string id;
     private string name;
     private string lastname;
     private int yearOfRegistration;
 
-    public User(string id, string name, string lastname, int yearOfRegistration)
+    public Utente(string id, string name, string lastname, int yearOfRegistration)
     {
         this.id = id;
         this.name = name;
@@ -20,3 +20,30 @@ class User
         return result;
     }
 }
+
+public class Book
+{
+    private string id;
+    private string title;
+    private string author;
+    private string Utente;
+
+    public Book(string id, string title, string author, string Utente)
+    {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.Utente = Utente.denomination;
+    }
+
+    public Book(string id, string title, string author)
+    {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.Utente = null;
+    }
+
+
+}
+
