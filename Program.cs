@@ -4,17 +4,22 @@ namespace BibloLibrary
     public class Utente
     {
         //inizializzazione  parametri con auto-implemented properties
-        public string ID { get; set; }
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public int YearOfRegistration { get; set; }
+        //il ? serve per accetare  che la variabile possa essere nulla
+        public string? ID { get; set; }
+        public string? Name { get; set; }
+        public string? LastName { get; set; }
+        public int? YearOfRegistration { get; set; }
 
         //costruttore di default
         public Utente() { }
 
-        public string Denomination()
+        //denominatio non è più un metodo della classe Utente ma una variabile in sola lettura
+        public string Denomination
         {
-            return Name + " " + LastName;
+            get
+            {
+                return Name + " " + LastName;
+            }
         }
     }
 
@@ -43,13 +48,13 @@ namespace BibloLibrary
         {
             if (this.utente != null)
             {
-                Console.WriteLine($"{this.title} è gia in prestito a {this.utente.Denomination()}");
+                Console.WriteLine($"{this.title} è gia in prestito a {this.utente.Denomination}");
                 return;
             }
             else
             {
                 this.utente = utente;
-                Console.WriteLine($"{this.title} è stato prestato a {this.utente.Denomination()}");
+                Console.WriteLine($"{this.title} è stato prestato a {this.utente.Denomination}");
             }
 
         }
@@ -57,7 +62,7 @@ namespace BibloLibrary
         {
             if (this.utente != null)
             {
-                Console.WriteLine($"{this.title} è stato restituito da {this.utente.Denomination()}");
+                Console.WriteLine($"{this.title} è stato restituito da {this.utente.Denomination}");
                 this.utente = null;
             }
 
@@ -73,11 +78,11 @@ namespace BibloLibrary
         public static void Main(string[] args)
         {
             //creiamo il primo utente
-            Utente utente1 = new Utente("001", "Mario", "Mario", 2021);
-            Console.WriteLine(utente1.Denomination());
+            Utente utente1 = new Utente { ID = "001", Name = "Mario", LastName = "Mario", YearOfRegistration = 2021 };
+            Console.WriteLine(utente1.Denomination);
             // creiamo il secondo Utente
-            Utente utente2 = new Utente("001", "Luigi", "Mario", 2020);
-            Console.WriteLine(utente2.Denomination());
+            Utente utente2 = new Utente { ID = "002", Name = "Luigi", LastName = "Mario", YearOfRegistration = 2020 };
+            Console.WriteLine(utente2.Denomination);
             // creiamo un Libbro
             Book book = new Book("B01", "Lo Hobbit", "J.R.R.Tolkien");
             Console.WriteLine(book.Description());
