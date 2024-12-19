@@ -11,6 +11,7 @@ namespace BibloLibrary
         public int? YearOfRegistration { get; set; }
 
         //costruttore di default
+        //può essere omesso in quanto di default
         public Utente() { }
 
         //denominatio non è più un metodo della classe Utente ma una variabile in sola lettura
