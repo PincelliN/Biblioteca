@@ -1,25 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿
 namespace BibloLibrary
 {
     public class Utente
     {
-        private string id;
-        private string name;
-        private string lastname;
-        private int yearOfRegistration;
+        //inizializzazione  parametri con auto-implemented properties
+        public string ID { get; set; }
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public int YearOfRegistration { get; set; }
 
-        public Utente(string id, string name, string lastname, int yearOfRegistration)
-        {
-            this.id = id;
-            this.name = name;
-            this.lastname = lastname;
-            this.yearOfRegistration = yearOfRegistration;
-        }
+        //costruttore di default
+        public Utente() { }
 
         public string Denomination()
         {
-            return this.name + " " + this.lastname;
+            return Name + " " + LastName;
         }
     }
 
