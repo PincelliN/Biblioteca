@@ -13,8 +13,12 @@ namespace BibloLibrary
                 return Name + " " + LastName;
             }
         }
-        //costruttore di default
-        //può essere omesso in quanto di default
+
+        public Person(string Name, string LastName)
+        {
+            this.Name = Name;
+            this.LastName = LastName;
+        }
     }
     public class Utente : Person
     {
@@ -23,7 +27,11 @@ namespace BibloLibrary
         public string? ID { get; set; }
         public int YearOfRegistration { get; set; }
 
-
+        public Utente(string ID, int YearOfRegistration, string Name, string LastName) : base(Name, LastName)
+        {
+            this.ID = ID;
+            this.YearOfRegistration = YearOfRegistration;
+        }
 
     }
 
@@ -75,17 +83,16 @@ namespace BibloLibrary
 
 
     }
-
     public class LybraryBook
     {
 
         public static void Main(string[] args)
         {
             //creiamo il primo utente
-            Utente utente1 = new Utente { ID = "001", Name = "Mario", LastName = "Mario", YearOfRegistration = 2021 };
+            Utente utente1 = new Utente("001", 2021, "Mario", "Mario");
             Console.WriteLine(utente1.Denomination);
             // creiamo il secondo Utente
-            Utente utente2 = new Utente { ID = "002", Name = "Luigi", LastName = "Mario", YearOfRegistration = 2020 };
+            Utente utente2 = new Utente("002", 2020, "Luigi", "Mario");
             Console.WriteLine(utente2.Denomination);
             // creiamo un Libbro
             Book book = new Book("B01", "Lo Hobbit", "J.R.R.Tolkien");
