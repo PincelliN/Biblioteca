@@ -1,19 +1,10 @@
 ﻿
 namespace BibloLibrary
 {
-    public class Utente
+    public class Person
     {
-        //inizializzazione  parametri con auto-implemented properties
-        //il ? serve per accetare  che la variabile possa essere nulla
-        public string? ID { get; set; }
         public string? Name { get; set; }
         public string? LastName { get; set; }
-        public int? YearOfRegistration { get; set; }
-
-        //costruttore di default
-        //può essere omesso in quanto di default
-        public Utente() { }
-
         //denominatio non è più un metodo della classe Utente ma una variabile in sola lettura
         public string Denomination
         {
@@ -22,6 +13,20 @@ namespace BibloLibrary
                 return Name + " " + LastName;
             }
         }
+    }
+    public class Utente
+    {
+        //inizializzazione  parametri con auto-implemented properties
+        //il ? serve per accetare  che la variabile possa essere nulla
+        public string? ID { get; set; }
+
+        public int? YearOfRegistration { get; set; }
+
+        //costruttore di default
+        //può essere omesso in quanto di default
+        public Utente() { }
+
+
     }
 
     public class Book
