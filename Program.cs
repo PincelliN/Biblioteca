@@ -13,27 +13,25 @@ namespace BibloLibrary
                 return Name + " " + LastName;
             }
         }
-    }
-    public class Utente
-    {
-        //inizializzazione  parametri con auto-implemented properties
-        //il ? serve per accetare  che la variabile possa essere nulla
-        public string? ID { get; set; }
-
-        public int? YearOfRegistration { get; set; }
-
         //costruttore di default
         //può essere omesso in quanto di default
-        public Utente() { }
+    }
+    public class Utente : Person
+    {
+        //inizializzazione  parametri con auto-implemented properties
+        //il ? serve per accetare  che la variabile possa essere nulla se ti tipo reference
+        public string? ID { get; set; }
+        public int YearOfRegistration { get; set; }
+
 
 
     }
 
     public class Book
     {
-        private string id;
-        private string title;
-        private string author;
+        private string? id;
+        private string? title;
+        private string? author;
         //oggetto della classe utente che può essere nullo 
         private Utente? utente;
 
